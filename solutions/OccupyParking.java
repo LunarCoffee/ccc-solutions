@@ -9,9 +9,11 @@ public class OccupyParking {
             String d2 = sc.nextLine();
             String d1 = sc.nextLine();
             
-            for (; n >= 0; --n)
-                if (d2.charAt(n) == 'C' && d1.charAt(n) == 'C')
+            for (; n >= 0; --n) {
+                if (d2.charAt(n) == 'C' && d1.charAt(n) == 'C') {
                     ++spaces;
+                }
+            }
             
             System.out.print(spaces);
         }
