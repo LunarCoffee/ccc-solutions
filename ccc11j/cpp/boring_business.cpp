@@ -14,7 +14,10 @@ static vector<point> points;
 static int xc = 0;
 static int yc = -1;
 
-int main() {    
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
     string temp = "d2r3d2r2u2r2d4l8u2";
     for (uint i = 0; i < temp.length(); i += 2) {
         tick(temp[i], temp[i + 1] - '0');
