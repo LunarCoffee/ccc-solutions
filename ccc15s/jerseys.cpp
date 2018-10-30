@@ -20,6 +20,9 @@ int process_request(vector<char> &available, request req) {
 }
 
 int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
     int j, a;
     cin >> j >> a;
     
