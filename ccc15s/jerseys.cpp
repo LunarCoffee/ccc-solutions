@@ -6,9 +6,7 @@
 
 using namespace std;
 
-typedef pair<char, int> request;
-
-int process_request(vector<char> &available, request req) {
+int process_request(vector<char> &available, pair<char, int> req) {
     static unordered_map<char, int> sizes{{'S', 0}, {'M', 1}, {'L', 2}};
     int pos = req.second - 1;
     
