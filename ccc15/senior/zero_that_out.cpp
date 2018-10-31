@@ -1,27 +1,26 @@
 #include <iostream>
 #include <vector>
+#include <numeric>
 
 using namespace std;
 
 int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
     int n;
     cin >> n;
     
-    vector<int> numbers;
+    vector<int> nums;
     for (; n > 0; --n) {
         int temp;
         cin >> temp;
         
         if (!temp) {
-            numbers.erase(numbers.end() - 1);
+            nums.pop_back();
         } else {
-            numbers.emplace_back(temp);
+            nums.emplace_back(temp);
         }
     }
-    
-    int sum = 0;
-    for (auto number : numbers) {
-        sum += number;
-    }
-    cout << sum;
+    cout << accumulate(nums.begin(), nums.end(), 0);
 }
