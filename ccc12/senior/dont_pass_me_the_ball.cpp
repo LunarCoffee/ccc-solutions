@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 
 using namespace std;
 
@@ -9,5 +8,14 @@ int main() {
     
     int j;
     cin >> j;
-    cout << ((j - 1) * (j - 2) * (j - 3)) / 6;
+    
+    int combos = 0;
+    for (int i = 0; i < j - 3; ++i) {
+        for (int k = i + 1; k < j - 2; ++k) {
+            for (int l = k + 1; l < j - 1; ++l) {
+                ++combos;
+            }
+        }
+    }
+    cout << combos;
 }
