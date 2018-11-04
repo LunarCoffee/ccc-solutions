@@ -4,8 +4,7 @@
 using namespace std;
 
 int calculate_time(int h, int l) {
-    int a;
-    int t = 0;
+    int a, t = 1;
     
     while ((a = -6 * pow(t, 4) + h * pow(t, 3) + 2 * pow(t, 2) + t) > 0 && t < l)
         ++t;
