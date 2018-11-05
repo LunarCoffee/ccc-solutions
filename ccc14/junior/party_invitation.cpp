@@ -12,7 +12,7 @@ int main() {
 
     int m;
     cin >> m;
-    for (int i = 0; i < m; ++i) {
+    while (m--) {
         int temp;
         cin >> temp;
         for (int j = temp - 1; j < friends.size(); j += temp)
