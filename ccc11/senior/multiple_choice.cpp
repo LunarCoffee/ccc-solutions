@@ -14,6 +14,7 @@ int main() {
     for (int i = 0; i < l; ++i)
         cin >> ans[i];
     for (int i = 0; i < l; ++i) {
-        if (ans[i] == res[i]) ++c;
+        if (ans[i] == res[i]) 
+            ++c;
     cout << c;
 }
