@@ -1,8 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <numeric>
-#include <algorithm>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
@@ -19,12 +15,10 @@ int main() {
     for (int i = 0; i < m; ++i) {
         int temp;
         cin >> temp;
-        for (int j = temp - 1; j < friends.size(); j += temp) {
+        for (int j = temp - 1; j < friends.size(); j += temp)
             friends.erase(friends.begin() + j--);
-        }
     }
     
-    for (auto i : friends) {
+    for (auto i : friends)
         cout << i << "\n";
-    }
 }
