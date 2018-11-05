@@ -11,12 +11,17 @@ int main() {
     int happy = 0, sad = 0;
     for (int i = 0; i < msg.length() - 2; ++i) {
         string chunk = msg.substr(i, 3);
-        if (chunk == ":-)") ++happy;
-        else if (chunk == ":-(") ++sad;
+        if (chunk == ":-)") 
+            ++happy;
+        else if (chunk == ":-(") 
+            ++sad;
     }
     
-    if (happy == 0 && sad == 0) cout << "none";
-    else if (happy == sad) cout << "unsure";
-    else if (happy > sad) cout << "happy";
+    if (happy == 0 && sad == 0) 
+        cout << "none";
+    else if (happy == sad) 
+        cout << "unsure";
+    else if (happy > sad) 
+        cout << "happy";
     else cout << "sad";
 }
