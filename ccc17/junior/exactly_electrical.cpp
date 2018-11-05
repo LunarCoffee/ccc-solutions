@@ -8,6 +8,5 @@ int main() {
     int a, b, c, d, t, min;
     cin >> a >> b >> c >> d >> t;
     min = abs(a - c) + abs(b - d);
-    
     cout << ((min <= t && !((t - min) & 1)) ? "Y" : "N");
 }
