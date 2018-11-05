@@ -14,7 +14,8 @@ int main() {
         b = c;
         c = d;
         cin >> d;
-        if (a + b + c + d > w) break;
+        if (a + b + c + d > w) 
+            break;
         ++crossed;
     }
     cout << crossed;
