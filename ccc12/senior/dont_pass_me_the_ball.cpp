@@ -1,5 +1,4 @@
-#include <iostream>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
@@ -10,12 +9,9 @@ int main() {
     cin >> j;
     
     int combos = 0;
-    for (int i = 0; i < j - 3; ++i) {
-        for (int k = i + 1; k < j - 2; ++k) {
-            for (int l = k + 1; l < j - 1; ++l) {
+    for (int i = 0; i < j - 3; ++i)
+        for (int k = i + 1; k < j - 2; ++k)
+            for (int l = k + 1; l < j - 1; ++l)
                 ++combos;
-            }
-        }
-    }
     cout << combos;
 }
