@@ -10,6 +10,7 @@ int main() {
     
     bool rot = true;
     for (auto i : text) {
-        if (i != 'I' && i != 'O' && i != 'S' && i != 'H' && i != 'Z' && i != 'X' && i != 'N') rot = false;
+        if (i != 'I' && i != 'O' && i != 'S' && i != 'H' && i != 'Z' && i != 'X' && i != 'N') 
+            rot = false;
     cout << (rot ? "YES" : "NO");
 }
