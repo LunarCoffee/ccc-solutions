@@ -1,6 +1,4 @@
-#include <iostream>
-#include <cmath>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 int calculate_time(int h, int l) {
@@ -18,7 +16,6 @@ int main() {
     cin >> h >> l;
 
     int time = calculate_time(h, l);
-
     if (time == -1) cout << "The balloon does not touch ground in the given time.";
     else cout << "The balloon first touches ground at hour:\n" << time;
 }
