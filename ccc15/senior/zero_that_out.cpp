@@ -12,7 +12,8 @@ int main() {
     int temp;
     while (n--) {
         cin >> temp;
-        if (!temp) nums.pop();
+        if (!temp) 
+            nums.pop();
         else nums.emplace(temp);
     }
     
