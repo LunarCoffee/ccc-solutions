@@ -12,7 +12,9 @@ int main() {
     int as = count(votes.begin(), votes.end(), 'A');
     int bs = v - as;
     
-    if (as > bs) cout << "A";
-    else if (as < bs) cout << "B";
+    if (as > bs) 
+        cout << "A";
+    else if (as < bs) 
+        cout << "B";
     else cout << "Tie";
 }
