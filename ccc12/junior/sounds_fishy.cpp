@@ -1,5 +1,4 @@
-#include <iostream>
-
+#include <stdc++.h>
 using namespace std;
 
 int main() {
@@ -8,14 +7,8 @@ int main() {
 
     int a, b, c, d;
     cin >> a >> b >> c >> d;
-    
-    if (d > c && c > b && b > a) {
-        cout << "Fish Rising";
-    } else if (d < c && c < b && b < a) {
-        cout << "Fish Diving";
-    } else if (a == b && b == c && c == d) {
-        cout << "Fish At Constant Depth";
-    } else {
-        cout << "No Fish";
-    }
+    if (d > c && c > b && b > a) cout << "Fish Rising";
+    else if (d < c && c < b && b < a) cout << "Fish Diving";
+    else if (a == b && b == c && c == d) cout << "Fish At Constant Depth";
+    else cout << "No Fish";
 }
