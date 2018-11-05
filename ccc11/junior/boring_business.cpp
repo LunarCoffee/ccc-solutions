@@ -42,9 +42,8 @@ int main() {
     cin.tie(nullptr);
     
     string temp = "d2r3d2r2u2r2d4l8u2";
-    for (uint i = 0; i < temp.length(); i += 2) {
+    for (uint i = 0; i < temp.length(); i += 2)
         tick(temp[i], temp[i + 1] - '0');
-    }
     
     string input;
     while (getline(cin, input) && input[0] != 'q') {
