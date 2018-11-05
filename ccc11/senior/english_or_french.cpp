@@ -1,22 +1,13 @@
-#include <iostream>
-#include <string>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 string get_lang(string s) {
     int ts = 0, ss = 0;
-    for (uint i = 0; i < s.size(); ++i) {
-        if (s[i] == 't' || s[i] == 'T') {
-            ++ts;
-        } else if (s[i] == 's' || s[i] == 'S') {
-            ++ss;
-        }
+    for (int i = 0; i < s.size(); ++i) {
+        if (s[i] == 't' || s[i] == 'T') ++ts;
+        else if (s[i] == 's' || s[i] == 'S') ++ss;
     }
-    
-    if (ss >= ts) {
-        return "French";
-    }
-    return "English";
+    return ss < ts ? "English" : "French";
 }
 
 int main() {
@@ -27,9 +18,8 @@ int main() {
     cin >> n;
     cin.ignore();
     
-    string text;
-    for (; n > 0; --n) {
-        string temp;
+    string text, temp;
+    while (n--) {
         getline(cin, temp);
         text += temp;
     }
