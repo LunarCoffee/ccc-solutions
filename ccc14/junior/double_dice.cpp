@@ -10,8 +10,10 @@ int main() {
 
     while (n--) {
         cin >> r1 >> r2;
-        if (r1 == r2) continue;
-        if (r1 > r2) dp -= r1;
+        if (r1 == r2) 
+            continue;
+        if (r1 > r2) 
+            dp -= r1;
         else ap -= r2;
     }
     cout << ap << "\n" << dp;
