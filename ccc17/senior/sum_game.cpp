@@ -9,14 +9,17 @@ int main() {
     cin >> n;
     
     vector<int> as(n), bs(n);
-    for (int i = 0; i < n; ++i) cin >> as[i];
-    for (int i = 0; i < n; ++i) cin >> bs[i];
+    for (int i = 0; i < n; ++i) 
+        cin >> as[i];
+    for (int i = 0; i < n; ++i) 
+        cin >> bs[i];
     
     int prev = 0, sa = 0, sb = 0;
     for (int i = 0; i < n; ++i) {
         sa += as[i];
         sb += bs[i];
-        if (sa == sb) prev = i + 1;
+        if (sa == sb) 
+            prev = i + 1;
     }
     cout << prev;
 }
