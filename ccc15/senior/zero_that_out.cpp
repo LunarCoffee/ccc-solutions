@@ -1,7 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <numeric>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
@@ -12,15 +9,11 @@ int main() {
     cin >> n;
     
     vector<int> nums;
-    for (; n > 0; --n) {
-        int temp;
+    int temp;
+    while (n--) {
         cin >> temp;
-        
-        if (!temp) {
-            nums.pop_back();
-        } else {
-            nums.emplace_back(temp);
-        }
+        if (!temp) nums.pop_back();
+        else nums.emplace_back(temp);
     }
     cout << accumulate(nums.begin(), nums.end(), 0);
 }
