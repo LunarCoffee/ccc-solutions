@@ -16,6 +16,7 @@ int main() {
     cin >> h >> l;
 
     int time = calculate_time(h, l);
-    if (time == -1) cout << "The balloon does not touch ground in the given time.";
+    if (time == -1) 
+        cout << "The balloon does not touch ground in the given time.";
     else cout << "The balloon first touches ground at hour:\n" << time;
 }
