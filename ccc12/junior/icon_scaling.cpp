@@ -1,10 +1,5 @@
-#include <iostream>
-
+#include <bits/stdc++.h>
 using namespace std;
-
-string repeat(string s, int t) {
-    return string(t, s[0]) + string(t, s[1]) + string(t, s[2]) + "\n";
-}
 
 int main() {
     ios_base::sync_with_stdio(false);
@@ -13,10 +8,8 @@ int main() {
     int k;
     cin >> k;
     
-    string icon[]{"*x*", " xx", "* *"};
-    for (int i = 0; i < 3; ++i) {
-        for (int j = 0; j < k; ++j) {
-            cout << repeat(icon[i], k);
-        }
-    }
+    string ic[]{"*x*", " xx", "* *"};
+    for (int i = 0; i < 3; ++i)
+        for (int j = 0; j < k; ++j)
+            cout << string(k, ic[i][0]) + string(k, ic[i][1]) + string(k, ic[i][2]) + "\n";
 }
