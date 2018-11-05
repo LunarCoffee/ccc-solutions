@@ -14,10 +14,8 @@ int main() {
     cin >> yst >> td;
     
     int shared = 0;
-    for (--n; n >= 0; --n) {
-        if (yst[n] == 'C' && td[n] == 'C') {
+    while (n--)
+        if (yst[n] == 'C' && td[n] == 'C')
             ++shared;
-        }
-    }
     cout << shared;
 }
