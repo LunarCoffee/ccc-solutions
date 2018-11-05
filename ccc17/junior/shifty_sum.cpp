@@ -9,6 +9,7 @@ int main() {
     cin >> n >> k;
     s = n;
     
-    while (k--) n += s * pow(10, k + 1);
+    while (k--) 
+        n += s * pow(10, k + 1);
     cout << n;
 }
