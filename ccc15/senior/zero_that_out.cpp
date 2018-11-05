@@ -8,12 +8,18 @@ int main() {
     int n;
     cin >> n;
     
-    vector<int> nums;
+    stack<int> nums;
     int temp;
     while (n--) {
         cin >> temp;
-        if (!temp) nums.pop_back();
-        else nums.emplace_back(temp);
+        if (!temp) nums.pop();
+        else nums.emplace(temp);
     }
-    cout << accumulate(nums.begin(), nums.end(), 0);
+    
+    int sum = 0;
+    while (!nums.empty()) {
+        sum += nums.top();
+        nums.pop();
+    }
+    cout << sum;
 }
