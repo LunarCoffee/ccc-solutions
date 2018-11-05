@@ -1,5 +1,4 @@
-#include <iostream>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
@@ -16,11 +15,7 @@ int main() {
     } 
     
     cout << "You are speeding and your fine is ";
-    if (1 <= over && over <= 20) {
-        cout << "$100.";
-    } else if (over >= 31) {
-        cout << "$500.";
-    } else {
-        cout << "$270.";
-    }
+    if (1 <= over && over <= 20) cout << "$100.";
+    else if (over >= 31) cout << "$500.";
+    else cout << "$270.";
 }
