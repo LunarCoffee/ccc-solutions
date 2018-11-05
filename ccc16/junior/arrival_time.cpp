@@ -1,7 +1,4 @@
-#include <iostream>
-#include <string>
-#include <iomanip>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
@@ -22,11 +19,8 @@ int main() {
         }
         h %= 24;
         
-        if ((h > 7 && h < 10) || (h == 7 && m > 0) || (h > 15 && h < 19) || (h == 15 && m > 0)) {
-            ++dist;
-        } else {
-            dist += 2;
-        }
+        if ((h > 7 && h < 10) || (h == 7 && m > 0) || (h > 15 && h < 19) || (h == 15 && m > 0)) ++dist;
+        else dist += 2;
     }
     cout << setw(2) << setfill('0') << h << ":" << setw(2) << m;
 }
