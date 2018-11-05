@@ -1,9 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <utility>
-#include <unordered_map>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 int process_request(vector<char> &available, pair<char, int> req) {
@@ -25,9 +20,8 @@ int main() {
     cin >> j >> a;
     
     vector<char> available(j);
-    for (int i = 0; i < j; ++i) {
+    for (int i = 0; i < j; ++i)
         cin >> available[i];
-    }
     
     int served = 0;
     for (int i = 0; i < a; ++i) {
