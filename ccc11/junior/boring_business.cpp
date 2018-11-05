@@ -1,14 +1,7 @@
-#include <iostream>
-#include <utility>
-#include <vector>
-#include <string>
-#include <algorithm>
-
+#include <bits/stdc++.h>
 using namespace std;
 
-typedef pair<int, int> point;
-
-static vector<point> points;
+static vector<pair<int, int>> points;
 static int xc = 0;
 static int yc = -1;
 
