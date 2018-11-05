@@ -17,6 +17,7 @@ int main() {
     bool good = true;
     for (int i = 0; i < n; ++i)
         for (int j = 0; j < n; ++j)
-            if (pairs[i][0] == pairs[i][1] || (pairs[i][0] == pairs[j][1] && !(pairs[i][1] == pairs[j][0]))) good = false;
+            if (pairs[i][0] == pairs[i][1] || (pairs[i][0] == pairs[j][1] && !(pairs[i][1] == pairs[j][0])))
+                good = false;
     cout << (good ? "good" : "bad");
 }
