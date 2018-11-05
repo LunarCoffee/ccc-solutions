@@ -1,6 +1,4 @@
-#include <iostream>
-#include <string>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
@@ -11,12 +9,15 @@ int main() {
     cin >> text;
     
     string c = "bcdfghjklmnpqrstvwxyz";
-    string new_text{};
+    string v = "aaeeeiiiiooooouuuuuuu";
+    string sc = "cdfghjklmnpqrstvwxyzz";
+    
+    string new_text;
     for (int i = 0; i < text.length(); ++i) {
         new_text += text[i];
         if (string("aeiou").find(text[i]) == string::npos) {
-            new_text += string("aaeeeiiiiooooouuuuuuu")[c.find(text[i])];
-            new_text += string("cdfghjklmnpqrstvwxyzz")[c.find(text[i])];
+            new_text += v[c.find(text[i])];
+            new_text += sc[c.find(text[i])];
         }
     }
     cout << new_text;
