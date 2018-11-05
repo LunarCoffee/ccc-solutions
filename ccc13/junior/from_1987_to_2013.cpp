@@ -1,7 +1,4 @@
-#include <iostream>
-#include <string>
-#include <set>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
@@ -10,9 +7,8 @@ int main() {
     
     int year;
     cin >> year;
-    ++year;
     
-    for (; year <= 10234; ++year) {
+    while (++year <= 10234) {
         string temp = to_string(year);
         if (set<int>{temp.begin(), temp.end()}.size() == temp.size()) {
             cout << year;
