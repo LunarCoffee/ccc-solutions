@@ -1,7 +1,4 @@
-#include <iostream>
-#include <string>
-#include <regex>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
@@ -11,12 +8,9 @@ int main() {
     string text;
     cin >> text;
     
-    regex rotatable("[IOSHZXN]");
-    string result = regex_replace(text, rotatable, "");
-    
-    if (result == "") {
-        cout << "YES";
-    } else {
-        cout << "NO";
-    }
+    bool rot = true;
+    for (auto i : text) {
+        if (i != 'I' && i != 'O' && i != 'S' && i != 'H' && i != 'Z' && i != 'X' && i != 'N')
+            rot = false;
+    cout << (rot ? "YES" : "NO");
 }
