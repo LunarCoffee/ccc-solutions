@@ -2,7 +2,7 @@
 using namespace std;
 
 int sumac_sequence(int sum, int a, int b) {
-    return (a - b < 0)  ? sum : sumac_sequence(++sum, b, a - b);
+    return (a - b < 0) ? sum : sumac_sequence(++sum, b, a - b);
 }
 
 int main() {
