@@ -1,5 +1,4 @@
-#include <iostream>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
@@ -9,16 +8,11 @@ int main() {
     int n, ap = 100, dp = 100, r1, r2;
     cin >> n;
 
-    for (; n > 0; --n) {
+    while (n--) {
         cin >> r1 >> r2;
-        if (r1 == r2) {
-            continue;
-        }
-        if (r1 > r2) {
-            dp -= r1;
-        } else {
-            ap -= r2;
-        }
+        if (r1 == r2) continue;
+        if (r1 > r2) dp -= r1;
+        else ap -= r2;
     }
     cout << ap << "\n" << dp;
 }
