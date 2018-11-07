@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+int tests, cars, temp;
 vector<int> c;
 stack<int> b;
 
@@ -26,13 +27,13 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
     
-    int tests;
-    cin >> tests;
-    
+    cin >> tests;    
     while (tests--) {
-        int cars;
         cin >> cars;
-        copy_n(istream_iterator<int>(cin), cars, back_inserter(c));
+        while (cars--) {
+            cin >> temp;
+            c.emplace_back(temp);
+        }
         
         cout << (attempt_move(1) ? "Y" : "N") << "\n";
         c.clear();
